@@ -1,0 +1,488 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f1faee;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #353535;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#logo{
+  display: flex;
+  margin: auto 10px;
+}
+
+#logo img{
+  width: 24%;
+}
+
+#logo ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#navigation ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+li{
+  padding: 10px 10px;
+  margin-top: 20px;
+  color: #f1faee;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.fa-calendar-times{
+  color: #f1faee;
+}
+
+.fa-power-off{
+  color: #e63946  ;
+}
+
+main{
+  margin: 37px 180px;
+  height: 550px;
+  overflow-y: scroll;
+}
+
+h1{
+  text-align: center;
+  margin-top: 90px;
+}
+
+#main_section{
+  display: flex;
+  flex-direction: row;
+}
+
+#horaire{
+  background: #e9c46a;
+}
+
+.plage{
+  border: solid 1px #f1faee;
+  width: 150px;
+  line-height: 2.5;
+  height: 40px;
+  text-align: center;
+}
+
+#plannings{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.unique{
+  text-align: center;
+  line-height: 2.6;
+  border: solid 1px #f1faee;
+  background-color: #e76f51;
+  height: 40px;
+}
+
+.jours{
+  display: flex;
+  background: #f4a261;
+}
+
+.jour{
+  width: 83px;
+  line-height: 2.5;
+  text-align: center;
+  border: solid 1px #f1faee;
+}
+
+.callender{
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1px;
+}
+
+.heure{
+  display: flex;
+  border: solid 1px;
+}
+
+.lieu{
+  padding: 10px;
+  width: 14.25%;
+}
+
+#dep_modal{
+  width: 40%;
+  height: 280px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  background-color: #264653;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+.modal-header{
+  text-align: center;
+}
+
+#depname{
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+
+.submitdepname{
+  width: 40%;
+  height: 30px;
+  margin: auto;
+}
+
+#vdp{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#shop_modal{
+  width: 40%;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  background-color: #264653;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+#shop_name{
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+
+#dep_shop{
+  height: 35px;
+  width: 170px;
+  margin-top: 20px;
+}
+
+#user_modal{
+  width: 40%;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  background-color: #264653;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+.user_input{
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#user_dep{
+  margin-top: 10px;
+  height: 35px;
+  width: 170px;
+}
+
+#tel{
+  margin-top: 10px;
+  height: 30px;
+  width: 150px;
+}
+
+#planning_modal{
+  width: 40%;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  background-color: #264653;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+#edit_planning_modal{
+  width: 40%;
+  height: 320px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  background-color: #264653;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+#valid_planning_modal{
+  width: 40%;
+  height: 320px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  background-color: #264653;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+.planning_select{
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#container{
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  padding: 40px;
+}
+
+#container form{
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+}
+
+#container input{
+  width: 70%;
+  height: 30px;
+  margin: 25px;
+}
+
+.input_group{
+  display: flex;
+  justify-content: center;
+}
+
+.horaire{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #2a9d8f; */
+}
+
+.dispo{
+  line-height: 2.9;
+  height: 40px;
+  width: 83px;
+  font-size: small;
+  border: solid 1px #f1faee;
+  text-align: center;
+  background-color: #2a9d8f;
+}
+
+.valide{
+  line-height: 2.9;
+  height: 40px;
+  width: 83px;
+  font-size: small;
+  border: solid 1px #f1faee;
+  text-align: center;
+  background-color: #55a630;
+}
+
+.pasdispo{
+  line-height: 2.9;
+  height: 40px;
+  width: 83px;
+  font-size: small;
+  border: solid 1px #f1faee;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#controle{
+  display: flex;
+  justify-content: space-around;
+}
+
+#precedent{
+  margin-left: -12%;
+  width: 100px;
+}
+
+#suivant{
+  margin-right: -12%;
+  width: 100px;
+}
+
+#dep_failed_error{
+  text-align: center;
+  color: #e63946;
+}
+
+#dep_ok_error{
+  text-align: center;
+  color: #2a9d8f;
+}
+
+#shop_failed_error{
+  text-align: center;
+  color: #e63946;
+}
+
+#shop_ok_error{
+  text-align: center;
+  color: #2a9d8f;
+}
+
+#user_failed_error{
+  text-align: center;
+  color: #e63946;
+}
+
+#user_ok_error{
+  text-align: center;
+  color: #2a9d8f;
+}
+
+#plan_failed_error{
+  text-align: center;
+  color: #e63946;
+}
+
+#plan_ok_error{
+  text-align: center;
+  color: #2a9d8f;
+}
+
+#valid_plan_ok_error{
+  text-align: center;
+  color: #2a9d8f;
+}
+
+#valid_plan_failed_error{
+  text-align: center;
+  color: #e63946;
+}
+
+h3{
+  color: #f1faee;
+}
+
+#plannings_one{
+  width: 100%;
+}
+
+.jour_one{
+  width: 14.25%;
+  line-height: 2.5;
+  text-align: center;
+  border: solid 1px #f1faee;
+}
+
+.callender_one{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+.horaire_one{
+  display: flex;
+  flex-direction: column;
+  width: 14.25%;
+}
+
+.dispo_one{
+  line-height: 2.9;
+  height: 40px;
+  /* width: 83px; */
+  font-size: small;
+  border: solid 1px #f1faee;
+  text-align: center;
+  background-color: #2a9d8f;
+}
+
+.pasdispo_one{
+  line-height: 2.9;
+  height: 40px;
+  /* width: 83px; */
+  font-size: small;
+  border: solid 1px #f1faee;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#change_password{
+  width: 31%;
+  height: 297px;
+  position: absolute;
+  top: 35%;
+  left: 33.5%;
+  right: 30%;
+  background-color: #264653;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+#pswrd{
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+
+#rpswrd{
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+
+#container_body{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+}
+
+#container_body form{
+  width: 50%;
+  margin: auto;
+}
+
+#container_body form input{
+  width: 100%;
+  height: 35px;
+}
+
+table{
+  width: 100%;
+}
+
+thead  td{
+  font-size: larger;
+}
+
+td{
+  width: 25%;
+  border: solid 1px;
+}
+
+td a{
+  margin-left: 20%;
+}
